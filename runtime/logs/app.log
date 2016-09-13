@@ -1,0 +1,1093 @@
+2016-09-13 17:32:43 [127.0.0.1][-][-][error][yii\base\Exception] exception 'yii\base\ErrorException' with message 'mkdir(): Permission denied' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:486
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mkdir(): Permis...', '/var/www/yii-te...', 486, Array)
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(486): mkdir('/var/www/yii-te...', 509)
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(263): yii\helpers\BaseFileHelper::createDirectory('<span class="st...', '<span class="nu...', '<span class="ke...')
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(542): yii\helpers\BaseFileHelper::copyDirectory('<span class="st...', '<span class="st...', '[<span class="s...')
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(458): yii\web\AssetManager->publishDirectory('<span class="st...', '[]')
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(183): yii\web\AssetManager->publish('<span class="st...', '[]')
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#7 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('<span class="st...', '[]', '<span class="ke...')
+#8 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('<span class="st...')
+#9 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('<span class="st...', '<span class="ke...')
+#10 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('<span class="st...')
+#11 /var/www/yii-teszt.local/www/task-manager/views/layouts/main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/yii-te...')
+#13 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#14 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\SiteController))
+#15 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<span class="st...')
+#16 /var/www/yii-teszt.local/www/task-manager/controllers/SiteController.php(63): yii\base\Controller->render('<span class="st...')
+#17 [internal function]: app\controllers\SiteController->actionIndex()
+#18 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#19 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#20 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#21 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#22 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\base\Exception' with message 'Failed to create directory "/var/www/yii-teszt.local/www/task-manager/web/assets/219cd499": mkdir(): Permission denied' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:491
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(263): yii\helpers\BaseFileHelper::createDirectory('<span class="st...', '<span class="nu...', '<span class="ke...')
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(542): yii\helpers\BaseFileHelper::copyDirectory('<span class="st...', '<span class="st...', '[<span class="s...')
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(458): yii\web\AssetManager->publishDirectory('<span class="st...', '[]')
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(183): yii\web\AssetManager->publish('<span class="st...', '[]')
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('<span class="st...', '[]', '<span class="ke...')
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('<span class="st...')
+#7 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('<span class="st...', '<span class="ke...')
+#8 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('<span class="st...')
+#9 /var/www/yii-teszt.local/www/task-manager/views/layouts/main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#10 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/yii-te...')
+#11 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#12 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\SiteController))
+#13 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<span class="st...')
+#14 /var/www/yii-teszt.local/www/task-manager/controllers/SiteController.php(63): yii\base\Controller->render('<span class="st...')
+#15 [internal function]: app\controllers\SiteController->actionIndex()
+#16 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#17 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#18 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#19 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#20 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2016-09-13 17:32:43 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'UNIQUE_ID' => 'V9g4O-kIl07THc1QivX5pwAAAAU'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '34632'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task-manager/web/'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473787963.692
+    'REQUEST_TIME' => 1473787963
+]
+2016-09-13 17:32:43 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to open debug data index file: /var/www/yii-teszt.local/www/task-manager/runtime/debug/index.data' 
+
+in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2-debug/LogTarget.php:77
+
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/var/www/yii-te...', Array)
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\Exception))
+#6 {main}
+2016-09-13 17:32:43 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'UNIQUE_ID' => 'V9g4O-kIl07THc1QivX5pwAAAAU'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '34632'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task-manager/web/'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473787963.692
+    'REQUEST_TIME' => 1473787963
+]
+2016-09-13 17:34:42 [127.0.0.1][-][-][error][yii\base\Exception] exception 'yii\base\ErrorException' with message 'mkdir(): Permission denied' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:486
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mkdir(): Permis...', '/var/www/yii-te...', 486, Array)
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(486): mkdir('/var/www/yii-te...', 509)
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(263): yii\helpers\BaseFileHelper::createDirectory('<span class="st...', '<span class="nu...', '<span class="ke...')
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(542): yii\helpers\BaseFileHelper::copyDirectory('<span class="st...', '<span class="st...', '[<span class="s...')
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(458): yii\web\AssetManager->publishDirectory('<span class="st...', '[]')
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(183): yii\web\AssetManager->publish('<span class="st...', '[]')
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#7 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('<span class="st...', '[]', '<span class="ke...')
+#8 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('<span class="st...')
+#9 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('<span class="st...', '<span class="ke...')
+#10 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('<span class="st...')
+#11 /var/www/yii-teszt.local/www/task-manager/views/layouts/main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/yii-te...')
+#13 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#14 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\SiteController))
+#15 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<span class="st...')
+#16 /var/www/yii-teszt.local/www/task-manager/controllers/SiteController.php(63): yii\base\Controller->render('<span class="st...')
+#17 [internal function]: app\controllers\SiteController->actionIndex()
+#18 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#19 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#20 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#21 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#22 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\base\Exception' with message 'Failed to create directory "/var/www/yii-teszt.local/www/task-manager/web/assets/219cd499": mkdir(): Permission denied' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:491
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(263): yii\helpers\BaseFileHelper::createDirectory('<span class="st...', '<span class="nu...', '<span class="ke...')
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(542): yii\helpers\BaseFileHelper::copyDirectory('<span class="st...', '<span class="st...', '[<span class="s...')
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(458): yii\web\AssetManager->publishDirectory('<span class="st...', '[]')
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(183): yii\web\AssetManager->publish('<span class="st...', '[]')
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('<span class="st...', '[]', '<span class="ke...')
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('<span class="st...')
+#7 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('<span class="st...', '<span class="ke...')
+#8 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('<span class="st...')
+#9 /var/www/yii-teszt.local/www/task-manager/views/layouts/main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#10 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/yii-te...')
+#11 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#12 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\SiteController))
+#13 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<span class="st...')
+#14 /var/www/yii-teszt.local/www/task-manager/controllers/SiteController.php(63): yii\base\Controller->render('<span class="st...')
+#15 [internal function]: app\controllers\SiteController->actionIndex()
+#16 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#17 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#18 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#19 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#20 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2016-09-13 17:34:42 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'UNIQUE_ID' => 'V9g4smLGf1wLsDnLjeXM@wAAAAQ'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '34642'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task-manager/web/'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473788082.512
+    'REQUEST_TIME' => 1473788082
+]
+2016-09-13 17:34:42 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to open debug data index file: /var/www/yii-teszt.local/www/task-manager/runtime/debug/index.data' 
+
+in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2-debug/LogTarget.php:77
+
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/var/www/yii-te...', Array)
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\Exception))
+#6 {main}
+2016-09-13 17:34:42 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'UNIQUE_ID' => 'V9g4smLGf1wLsDnLjeXM@wAAAAQ'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '34642'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task-manager/web/'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473788082.512
+    'REQUEST_TIME' => 1473788082
+]
+2016-09-13 17:49:13 [127.0.0.1][-][-][error][yii\base\Exception] exception 'yii\base\ErrorException' with message 'chmod(): Permission denied' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:495
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'chmod(): Permis...', '/var/www/yii-te...', 495, Array)
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(495): chmod('/var/www/yii-te...', 509)
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(263): yii\helpers\BaseFileHelper::createDirectory('<span class="st...', '<span class="nu...', '<span class="ke...')
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(542): yii\helpers\BaseFileHelper::copyDirectory('<span class="st...', '<span class="st...', '[<span class="s...')
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(458): yii\web\AssetManager->publishDirectory('<span class="st...', '[]')
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(183): yii\web\AssetManager->publish('<span class="st...', '[]')
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#7 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('<span class="st...', '[]', '<span class="ke...')
+#8 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('<span class="st...')
+#9 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('<span class="st...', '<span class="ke...')
+#10 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('<span class="st...')
+#11 /var/www/yii-teszt.local/www/task-manager/views/layouts/main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/yii-te...')
+#13 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#14 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\SiteController))
+#15 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<span class="st...')
+#16 /var/www/yii-teszt.local/www/task-manager/controllers/SiteController.php(63): yii\base\Controller->render('<span class="st...')
+#17 [internal function]: app\controllers\SiteController->actionIndex()
+#18 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#19 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#20 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#21 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#22 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\base\Exception' with message 'Failed to change permissions for directory "/var/www/yii-teszt.local/www/task-manager/web/assets/219cd499": chmod(): Permission denied' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:497
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(263): yii\helpers\BaseFileHelper::createDirectory('<span class="st...', '<span class="nu...', '<span class="ke...')
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(542): yii\helpers\BaseFileHelper::copyDirectory('<span class="st...', '<span class="st...', '[<span class="s...')
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(458): yii\web\AssetManager->publishDirectory('<span class="st...', '[]')
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(183): yii\web\AssetManager->publish('<span class="st...', '[]')
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('<span class="st...', '[]', '<span class="ke...')
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('<span class="st...')
+#7 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('<span class="st...', '<span class="ke...')
+#8 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('<span class="st...')
+#9 /var/www/yii-teszt.local/www/task-manager/views/layouts/main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#10 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/yii-te...')
+#11 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#12 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\SiteController))
+#13 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<span class="st...')
+#14 /var/www/yii-teszt.local/www/task-manager/controllers/SiteController.php(63): yii\base\Controller->render('<span class="st...')
+#15 [internal function]: app\controllers\SiteController->actionIndex()
+#16 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#17 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#18 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#19 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#20 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2016-09-13 17:49:13 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'UNIQUE_ID' => 'V9g8GWLGf1wLsDnLjeXM-AAAAAQ'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '34840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task-manager/web/'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473788953.593
+    'REQUEST_TIME' => 1473788953
+]
+2016-09-13 18:09:41 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Schema' not found' in /var/www/yii-teszt.local/www/task-manager/migrations/m160913_175715_create_tasks_table.php:21
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-09-13 18:09:30 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '2'
+    'KDE_MULTIHEAD' => 'false'
+    'XDG_SESSION_ID' => '1'
+    'SSH_AGENT_PID' => '1902'
+    'HOSTNAME' => 'localhost.localdomain'
+    'SHELL' => '/bin/bash'
+    'XDG_MENU_PREFIX' => 'kf5-'
+    'TERM' => 'xterm-256color'
+    'HISTSIZE' => '1000'
+    'KONSOLE_DBUS_SERVICE' => ':1.103'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/cgabor/.gtkrc-2.0:/home/cgabor/.gtkrc-2.0-kde4:/home/cgabor/.config/gtkrc-2.0'
+    'KONSOLE_PROFILE_NAME' => 'Default'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/cgabor/.gtkrc:/home/cgabor/.config/gtkrc'
+    'PULSE_PROP_OVERRIDE_application_name' => 'Plasma'
+    'WINDOWID' => '75497559'
+    'OLDPWD' => '/var/www/yii-teszt.local/www'
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'SHELL_SESSION_ID' => 'c39283f24505400095cecf597e8972e9'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'cgabor'
+    'LS_COLORS' => 'rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'QT_AUTO_SCREEN_SCALE_FACTOR' => '0'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-ystNmXWXGAsN/agent.1887'
+    'SESSION_MANAGER' => 'local/unix:@/tmp/.ICE-unix/1984,unix/unix:/tmp/.ICE-unix/1984'
+    'USERNAME' => 'cgabor'
+    'MC_TMPDIR' => '/tmp/mc-cgabor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg:/usr/share/kde-settings/kde-profile/default/xdg'
+    'DESKTOP_SESSION' => 'plasma'
+    'MAIL' => '/var/spool/mail/cgabor'
+    'PATH' => '/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/cgabor/.local/bin:/home/cgabor/bin'
+    'PWD' => '/var/www/yii-teszt.local/www/task-manager'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PULSE_PROP_OVERRIDE_application_icon_name' => 'plasma'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/4'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'hu_HU.UTF-8'
+    'GDM_LANG' => 'hu_HU.UTF-8'
+    'MODULEPATH' => '/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles'
+    'KDEDIRS' => '/usr'
+    'LOADEDMODULES' => ''
+    'KONSOLE_DBUS_SESSION' => '/Sessions/4'
+    'GDMSESSION' => 'plasma'
+    'HISTCONTROL' => 'ignorespace'
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'COLORFGBG' => '15;0'
+    'SHLVL' => '4'
+    'HOME' => '/home/cgabor'
+    'XDG_SEAT' => 'seat0'
+    'GDK_CORE_DEVICE_EVENTS' => '1'
+    'LANGUAGE' => ''
+    'KDE_SESSION_VERSION' => '5'
+    'XCURSOR_THEME' => 'breeze_cursors'
+    'MC_SID' => '11906'
+    'XDG_SESSION_DESKTOP' => 'plasma'
+    'LOGNAME' => 'cgabor'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'PULSE_PROP_OVERRIDE_application_version' => '5.7.3'
+    'XDG_DATA_DIRS' => '/usr/share/kde-settings/kde-profile/default/share:/usr/local/share:/usr/share'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-T9eUEEDiDs,guid=048daddb624a92284f5c646557d7cbc6'
+    'MODULESHOME' => '/usr/share/Modules'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'WINDOWPATH' => '2'
+    'DISPLAY' => ':0'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'PROFILEHOME' => ''
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'XAUTHORITY' => '/tmp/xauth-1000-_0'
+    'BASH_FUNC_module()' => '() {  eval `/usr/bin/modulecmd bash $*`
+}'
+    'BASH_FUNC_scl()' => '() {  local CMD=$1;
+ if [ \"$CMD\" = \"load\" -o \"$CMD\" = \"unload\" ]; then
+ eval \"module $@\";
+ else
+ /usr/bin/scl \"$@\";
+ fi
+}'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1473790170.7055
+    'REQUEST_TIME' => 1473790170
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2016-09-13 18:11:05 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Schema' not found' in /var/www/yii-teszt.local/www/task-manager/migrations/m160913_175715_create_tasks_table.php:21
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-09-13 18:11:00 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '2'
+    'KDE_MULTIHEAD' => 'false'
+    'XDG_SESSION_ID' => '1'
+    'SSH_AGENT_PID' => '1902'
+    'HOSTNAME' => 'localhost.localdomain'
+    'SHELL' => '/bin/bash'
+    'XDG_MENU_PREFIX' => 'kf5-'
+    'TERM' => 'xterm-256color'
+    'HISTSIZE' => '1000'
+    'KONSOLE_DBUS_SERVICE' => ':1.103'
+    'GTK2_RC_FILES' => '/etc/gtk-2.0/gtkrc:/home/cgabor/.gtkrc-2.0:/home/cgabor/.gtkrc-2.0-kde4:/home/cgabor/.config/gtkrc-2.0'
+    'KONSOLE_PROFILE_NAME' => 'Default'
+    'GTK_RC_FILES' => '/etc/gtk/gtkrc:/home/cgabor/.gtkrc:/home/cgabor/.config/gtkrc'
+    'PULSE_PROP_OVERRIDE_application_name' => 'Plasma'
+    'WINDOWID' => '75497559'
+    'OLDPWD' => '/var/www/yii-teszt.local/www'
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'SHELL_SESSION_ID' => 'c39283f24505400095cecf597e8972e9'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'KDE_FULL_SESSION' => 'true'
+    'USER' => 'cgabor'
+    'LS_COLORS' => 'rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'QT_AUTO_SCREEN_SCALE_FACTOR' => '0'
+    'SSH_AUTH_SOCK' => '/tmp/ssh-ystNmXWXGAsN/agent.1887'
+    'SESSION_MANAGER' => 'local/unix:@/tmp/.ICE-unix/1984,unix/unix:/tmp/.ICE-unix/1984'
+    'USERNAME' => 'cgabor'
+    'MC_TMPDIR' => '/tmp/mc-cgabor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg:/usr/share/kde-settings/kde-profile/default/xdg'
+    'DESKTOP_SESSION' => 'plasma'
+    'MAIL' => '/var/spool/mail/cgabor'
+    'PATH' => '/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/cgabor/.local/bin:/home/cgabor/bin'
+    'PWD' => '/var/www/yii-teszt.local/www/task-manager'
+    'XDG_SESSION_TYPE' => 'x11'
+    'PULSE_PROP_OVERRIDE_application_icon_name' => 'plasma'
+    'KONSOLE_DBUS_WINDOW' => '/Windows/4'
+    'KDE_SESSION_UID' => '1000'
+    'LANG' => 'hu_HU.UTF-8'
+    'GDM_LANG' => 'hu_HU.UTF-8'
+    'MODULEPATH' => '/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles'
+    'KDEDIRS' => '/usr'
+    'LOADEDMODULES' => ''
+    'KONSOLE_DBUS_SESSION' => '/Sessions/4'
+    'GDMSESSION' => 'plasma'
+    'HISTCONTROL' => 'ignorespace'
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'COLORFGBG' => '15;0'
+    'SHLVL' => '4'
+    'HOME' => '/home/cgabor'
+    'XDG_SEAT' => 'seat0'
+    'GDK_CORE_DEVICE_EVENTS' => '1'
+    'LANGUAGE' => ''
+    'KDE_SESSION_VERSION' => '5'
+    'XCURSOR_THEME' => 'breeze_cursors'
+    'MC_SID' => '11906'
+    'XDG_SESSION_DESKTOP' => 'plasma'
+    'LOGNAME' => 'cgabor'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'PULSE_PROP_OVERRIDE_application_version' => '5.7.3'
+    'XDG_DATA_DIRS' => '/usr/share/kde-settings/kde-profile/default/share:/usr/local/share:/usr/share'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-T9eUEEDiDs,guid=048daddb624a92284f5c646557d7cbc6'
+    'MODULESHOME' => '/usr/share/Modules'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'WINDOWPATH' => '2'
+    'DISPLAY' => ':0'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'PROFILEHOME' => ''
+    'XDG_CURRENT_DESKTOP' => 'KDE'
+    'XAUTHORITY' => '/tmp/xauth-1000-_0'
+    'BASH_FUNC_module()' => '() {  eval `/usr/bin/modulecmd bash $*`
+}'
+    'BASH_FUNC_scl()' => '() {  local CMD=$1;
+ if [ \"$CMD\" = \"load\" -o \"$CMD\" = \"unload\" ]; then
+ eval \"module $@\";
+ else
+ /usr/bin/scl \"$@\";
+ fi
+}'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1473790260.353
+    'REQUEST_TIME' => 1473790260
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2016-09-13 18:54:31 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "tasks".' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('tasks', Array)
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php:99
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-09-13 18:54:31 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"89Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm\";}'
+    'PHPSESSID' => '88hvuug06po9dd3q3jsvcmca33'
+    '_identity' => '0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'V9hLZ0B9BzPpsQS95zm8FQAAAAI'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2289Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm%22%3B%7D; PHPSESSID=88hvuug06po9dd3q3jsvcmca33; _identity=0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '35922'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/task-manager/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473792871.633
+    'REQUEST_TIME' => 1473792871
+]
+2016-09-13 18:55:45 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "tasks".' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('tasks', Array)
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php:99
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-09-13 18:55:45 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"89Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm\";}'
+    'PHPSESSID' => '88hvuug06po9dd3q3jsvcmca33'
+    '_identity' => '0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'V9hLsaN6xWAlBRkl0oVmTwAAAAY'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2289Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm%22%3B%7D; PHPSESSID=88hvuug06po9dd3q3jsvcmca33; _identity=0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '35942'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/task-manager/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473792945.037
+    'REQUEST_TIME' => 1473792945
+]
+2016-09-13 19:01:30 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "tasks".' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('tasks', Array)
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php:99
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-09-13 19:01:30 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"89Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm\";}'
+    'PHPSESSID' => '88hvuug06po9dd3q3jsvcmca33'
+    '_identity' => '0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'V9hNCkBNsmhctyZxWW54AQAAAAk'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2289Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm%22%3B%7D; PHPSESSID=88hvuug06po9dd3q3jsvcmca33; _identity=0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '36062'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/task-manager/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473793290.74
+    'REQUEST_TIME' => 1473793290
+]
+2016-09-13 19:01:38 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "tasks".' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('tasks', Array)
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php:99
+Stack trace:
+#0 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-09-13 19:01:38 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"89Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm\";}'
+    'PHPSESSID' => '88hvuug06po9dd3q3jsvcmca33'
+    '_identity' => '0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'V9hNEkBNsmhctyZxWW54BwAAAAk'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2289Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm%22%3B%7D; PHPSESSID=88hvuug06po9dd3q3jsvcmca33; _identity=0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '36062'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/task-manager/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473793298.83
+    'REQUEST_TIME' => 1473793298
+]
+2016-09-13 19:09:15 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\controllers\TasksController' in file: /var/www/yii-teszt.local/www/task-manager/controllers/TasksController.php. Namespace missing?' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(562): class_exists('app\\controllers...')
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID('tasks')
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('tasks')
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('tasks', Array)
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2016-09-13 19:09:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"89Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm\";}'
+    'PHPSESSID' => '88hvuug06po9dd3q3jsvcmca33'
+    '_identity' => '0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'V9hO232xmV@vDWwRCCdFagAAAAA'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2289Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm%22%3B%7D; PHPSESSID=88hvuug06po9dd3q3jsvcmca33; _identity=0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '36158'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/task-manager/web/index.php?r=tasks'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473793755.405
+    'REQUEST_TIME' => 1473793755
+]
+2016-09-13 19:11:50 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('delete', Array)
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('tasks/delete', Array)
+#7 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2016-09-13 19:11:50 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][info][application] $_GET = [
+    'r' => 'tasks/delete'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"89Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm\";}'
+    'PHPSESSID' => '88hvuug06po9dd3q3jsvcmca33'
+    '_identity' => '0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'V9hPdn2xmV@vDWwRCCdFcAAAAAA'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii-teszt.local/task-manager/web/index.php?r=tasks%2Fview&id=2'
+    'HTTP_COOKIE' => '_csrf=f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2289Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm%22%3B%7D; PHPSESSID=88hvuug06po9dd3q3jsvcmca33; _identity=0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '36216'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks%2Fdelete&id=2'
+    'REQUEST_URI' => '/task-manager/web/index.php?r=tasks%2Fdelete&id=2'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473793910.174
+    'REQUEST_TIME' => 1473793910
+]
+2016-09-13 19:12:09 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('delete', Array)
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('tasks/delete', Array)
+#7 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2016-09-13 19:12:09 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][info][application] $_GET = [
+    'r' => 'tasks/delete'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"89Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm\";}'
+    'PHPSESSID' => '88hvuug06po9dd3q3jsvcmca33'
+    '_identity' => '0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'V9hPifkIl07THc1QivX56QAAAAU'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii-teszt.local/task-manager/web/index.php?r=tasks%2Findex'
+    'HTTP_COOKIE' => '_csrf=f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2289Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm%22%3B%7D; PHPSESSID=88hvuug06po9dd3q3jsvcmca33; _identity=0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '36220'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks%2Fdelete&id=1'
+    'REQUEST_URI' => '/task-manager/web/index.php?r=tasks%2Fdelete&id=1'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473793929.495
+    'REQUEST_TIME' => 1473793929
+]
+2016-09-13 19:12:56 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('delete', Array)
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('tasks/delete', Array)
+#7 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2016-09-13 19:12:56 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][info][application] $_GET = [
+    'r' => 'tasks/delete'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"89Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm\";}'
+    'PHPSESSID' => '88hvuug06po9dd3q3jsvcmca33'
+    '_identity' => '0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'V9hPuEB9BzPpsQS95zm8JwAAAAI'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii-teszt.local/task-manager/web/index.php?r=tasks%2Findex'
+    'HTTP_COOKIE' => '_csrf=f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2289Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm%22%3B%7D; PHPSESSID=88hvuug06po9dd3q3jsvcmca33; _identity=0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '36234'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks%2Fdelete&id=2'
+    'REQUEST_URI' => '/task-manager/web/index.php?r=tasks%2Fdelete&id=2'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473793976.434
+    'REQUEST_TIME' => 1473793976
+]
+2016-09-13 19:14:23 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('delete', Array)
+#6 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('tasks/delete', Array)
+#7 /var/www/yii-teszt.local/www/task-manager/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/yii-teszt.local/www/task-manager/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2016-09-13 19:14:23 [127.0.0.1][100][88hvuug06po9dd3q3jsvcmca33][info][application] $_GET = [
+    'r' => 'tasks/delete'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"89Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm\";}'
+    'PHPSESSID' => '88hvuug06po9dd3q3jsvcmca33'
+    '_identity' => '0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'V9hQD8mf0nNJlsB@Qs82JgAAAAg'
+    'HTTP_HOST' => 'yii-teszt.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii-teszt.local/task-manager/web/index.php?r=tasks%2Findex'
+    'HTTP_COOKIE' => '_csrf=f62f6bb2e4e336b9b3c91fdaefacacf31110b383b363d99dbf45dd5e5e5d1b0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2289Ei5tbWhePhQJAYw7qeJBlDV7ha53Qm%22%3B%7D; PHPSESSID=88hvuug06po9dd3q3jsvcmca33; _identity=0aea9848e01618ae9181227dd57debaca39c9b90537841890943368ea61b03b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Fedora) PHP/5.6.25'
+    'SERVER_NAME' => 'yii-teszt.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii-teszt.local/www'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => '/var/www/yii-teszt.local/www/task-manager/web/index.php'
+    'REMOTE_PORT' => '36256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks%2Fdelete&id=1'
+    'REQUEST_URI' => '/task-manager/web/index.php?r=tasks%2Fdelete&id=1'
+    'SCRIPT_NAME' => '/task-manager/web/index.php'
+    'PHP_SELF' => '/task-manager/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473794063.901
+    'REQUEST_TIME' => 1473794063
+]
